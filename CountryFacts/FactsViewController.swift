@@ -8,12 +8,14 @@
 import UIKit
 
 class FactsViewController: UITableViewController {
-    var facts: Facts!
+    var country: Country!
     var factsDict: [String: String] = [:]
     var orderedKeys: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = country.name
+        
         loadFacts()
     }
     
@@ -23,13 +25,13 @@ class FactsViewController: UITableViewController {
         for key in orderedKeys {
             switch key {
             case "capital":
-                factsDict[key] = facts.capital
+                factsDict[key] = country.facts.capital
             case "size":
-                factsDict[key] = String(facts.size)
+                factsDict[key] = String(country.facts.size)
             case "population":
-                factsDict[key] = String(facts.population)
+                factsDict[key] = String(country.facts.population)
             case "currency":
-                factsDict[key] = facts.currency
+                factsDict[key] = country.facts.currency
             default:
                 break
             }
