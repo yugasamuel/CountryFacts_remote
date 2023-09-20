@@ -37,7 +37,7 @@ class FactsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return orderedKeys.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,7 +47,7 @@ class FactsViewController: UITableViewController {
         let value = factsDict[key]
         
         var content = cell.defaultContentConfiguration()
-        content.text = key
+        content.text = key.capitalized
         content.secondaryText = value
         
         cell.contentConfiguration = content
@@ -55,4 +55,15 @@ class FactsViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            let key = orderedKeys[indexPath.row]
+            let value = factsDict[key]
+            
+            vc.key = key.capitalized
+            vc.value = value
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
