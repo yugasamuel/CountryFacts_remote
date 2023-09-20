@@ -10,6 +10,10 @@ import Foundation
 class Country: Codable {
     let id: String
     let name: String
+    let facts: Facts
+}
+
+class Facts: Codable {
     let capital: String
     let size: Double
     let population: Int

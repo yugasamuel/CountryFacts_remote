@@ -37,5 +37,12 @@ class ViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Facts") as? FactsViewController {
+            vc.facts = countries[indexPath.row].facts
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
