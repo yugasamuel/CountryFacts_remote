@@ -8,6 +8,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    var country: Country!
     var key: String!
     var value: String!
     var keyLabel: UILabel!
@@ -15,6 +16,8 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareFact))
     }
     
     override func loadView() {
@@ -40,5 +43,26 @@ class DetailViewController: UIViewController {
             valueLabel.topAnchor.constraint(equalTo: keyLabel.bottomAnchor, constant: 8),
             valueLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16)
         ])
+    }
+    
+    @objc func shareFact() {
+        var message = "Did you know that \(country.name)"
+        
+        switch key {
+        case "Capital":
+            message += "'s capital is \(value!)"
+        case "Size":
+            message += " has the size of \(value!) square kilometers"
+        case "Population":
+            message += " has the population of \(value!)"
+        case "Currency":
+            message += "'s currency is \(value!)"
+        default:
+            break
+        }
+        
+        let vc = UIActivityViewController(activityItems: [message], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
 }

@@ -62,6 +62,7 @@ class FactsViewController: UITableViewController {
             let key = orderedKeys[indexPath.row]
             let value = factsDict[key]
             
+            vc.country = country
             vc.key = key.capitalized
             vc.value = value
             
