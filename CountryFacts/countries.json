@@ -1,0 +1,26 @@
+{
+    "indonesia": {
+        "id": "idn",
+        "name": "Indonesia",
+        "capital": "Jakarta",
+        "size": 1904569,
+        "population": "273,523,615",
+        "currency": "Indonesian Rupiah (IDR)"
+    },
+    "singapore": {
+        "id": "sgp",
+        "name": "Singapore",
+        "capital": "Singapore",
+        "size": 724.6,
+        "population": 5757499,
+        "currency": "Singapore Dollar (SGD)"
+    },
+    "malaysia": {
+        "id": "mys",
+        "name": "Malaysia",
+        "capital": "Kuala Lumpur",
+        "size": 330803,
+        "population": 32776194,
+        "currency": "Malaysian Ringgit (MYR)"
+    }
+}
