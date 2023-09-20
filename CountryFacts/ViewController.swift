@@ -8,12 +8,10 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    var countries: [String: Country] = Bundle.main.decode("countries.json")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

@@ -17,6 +17,7 @@
 		65E68D6D2ABAF71200EA3F3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E68D6C2ABAF71200EA3F3A /* DetailViewController.swift */; };
 		65E68D6F2ABAF92600EA3F3A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E68D6E2ABAF92600EA3F3A /* Country.swift */; };
 		65E68D732ABAFBB400EA3F3A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 65E68D722ABAFBB400EA3F3A /* countries.json */; };
+		65E68D752ABB0B8D00EA3F3A /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E68D742ABB0B8D00EA3F3A /* Bundle-Decodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		65E68D6C2ABAF71200EA3F3A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		65E68D6E2ABAF92600EA3F3A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		65E68D722ABAFBB400EA3F3A /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		65E68D742ABB0B8D00EA3F3A /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				65E68D5A2ABAF61300EA3F3A /* ViewController.swift */,
 				65E68D6A2ABAF6B100EA3F3A /* FactsViewController.swift */,
 				65E68D6C2ABAF71200EA3F3A /* DetailViewController.swift */,
+				65E68D742ABB0B8D00EA3F3A /* Bundle-Decodable.swift */,
 				65E68D5C2ABAF61300EA3F3A /* Main.storyboard */,
 				65E68D6E2ABAF92600EA3F3A /* Country.swift */,
 				65E68D722ABAFBB400EA3F3A /* countries.json */,
@@ -156,6 +159,7 @@
 				65E68D6D2ABAF71200EA3F3A /* DetailViewController.swift in Sources */,
 				65E68D572ABAF61300EA3F3A /* AppDelegate.swift in Sources */,
 				65E68D6F2ABAF92600EA3F3A /* Country.swift in Sources */,
+				65E68D752ABB0B8D00EA3F3A /* Bundle-Decodable.swift in Sources */,
 				65E68D592ABAF61300EA3F3A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
